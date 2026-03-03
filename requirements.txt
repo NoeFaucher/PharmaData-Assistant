@@ -1,0 +1,11 @@
+langchain
+langchain-openai
+langgraph
+pandas
+openpyxl
+matplotlib
+python-dotenv
+pytest
+plotly
+nest-asyncio
+streamlit

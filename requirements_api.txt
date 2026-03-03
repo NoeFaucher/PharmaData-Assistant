@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+asyncpg
+psycopg[binary,pool]
+langgraph-checkpoint-postgres
+python-jose[cryptography]
+bcrypt
+python-multipart
+pydantic-settings
+pydantic[email]

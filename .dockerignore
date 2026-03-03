@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.git/
+*.xlsx
+*.jsonl
+logs/
+.pytest_cache/
+kubernetes/
+results/
+test/
+pharmatech*
+test_technique*
