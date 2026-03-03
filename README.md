@@ -121,7 +121,7 @@ Les fichiers Excel accéptés doivent contenir 3 onglets obligatoire (+ n onglet
 
 ```bash
 # Cloner / se placer dans le répertoire
-cd <répertoire>
+cd PharmaData-Assistant
 
 # Créer et activer l'environnement virtuel
 python -m venv .venv
