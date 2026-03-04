@@ -108,10 +108,13 @@ kubectl apply -f kubernetes/namespace.yaml
 
 # 2. Créer le bootstrap token pour accéder au Secret manager OVH
 #    (contient le token d'authentification encodé en base64)
-kubectl apply -f kubernetes/secret.yaml -n external-secrets
+kubectl apply -f kubernetes/external-secret/secret_ovhcloud_token.yaml -n external-secrets
 
 # 3. Déployer le ClusterSecretStore et l'ExternalSecret
 kubectl apply -f kubernetes/external-secret/external-secret.yaml
+
+# 4. Les Secret pour l'api
+kubectl apply -f kubernetes/secret_pharma.yaml
 ```
 
 Vérifier que les secrets sont bien synchronisés :
@@ -127,7 +130,8 @@ kubectl get secret pharma-secrets -n pharma
 ## 4. Déployer l'application
 
 ```bash
-kubectl apply -f kubernetes/kubernetes_conf.yaml
+kubectl apply -f kubernetes/nginx.yaml
+kubectl apply -f kubernetes/api.yaml
 ```
 
 Ce manifest déploie :
